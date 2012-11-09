@@ -21,7 +21,6 @@ class Visualizer < Sinatra::Base
   get '/game/:name' do
     @game_name = params[:name]
     @game = File.read(games_dir("#{@game_name}")).gsub(/\n/m, '\n')
-    p @game
     erb :game
   end
 end

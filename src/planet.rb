@@ -5,7 +5,8 @@ class Planet
     :owner, 
     :ships,
     :incoming_friendly,
-    :incoming_hostile
+    :incoming_hostile,
+    :distance
 
   def initialize(planet_id)
     @planet_id = planet_id

@@ -54,7 +54,7 @@ class Fight
         while !stderr.eof?
           line = stderr.readline
           if @verbose
-            @shell.puts line 
+            @shell.say line 
           else
             if line =~ /Turn (\d+)/
               @shell.say ".", nil, false

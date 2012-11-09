@@ -17,7 +17,7 @@ class Default < Thor
   end
 
   desc "fight [OPPONENT]", "Pit your bot against opponent on a random map"
-  method_options :show => false, :map => :string, :turns => 500, :verbose => false
+  method_options :show => false, :map => :string, :turns => 1000, :verbose => false
   def fight(opponent = Bot::DEFAULT_OPPONENT)
     @f = Fight.new(options.merge({:opponent => opponent, :shell => self.shell}))
     @f.fight

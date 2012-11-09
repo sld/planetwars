@@ -1,5 +1,6 @@
 require 'naive_strategy'
 require 'reinforce'
+require 'idris_strategy'
 
 class Strategies
   def initialize(strategies)
@@ -12,10 +13,13 @@ class Strategies
 
   class << self
     def setup
-      Strategies.new [
-        NaiveStrategy.new,
-        Reinforce.new
+       Strategies.new [
+        IdrisStrategy.new
       ]
+      #Strategies.new [
+      #  NaiveStrategy.new,
+      #  Reinforce.new
+      #]
     end
   end
 end
