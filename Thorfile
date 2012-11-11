@@ -25,7 +25,7 @@ class Default < Thor
   end
 
   desc "fightall [OPPONENT]", "Fight on all maps"
-  method_options :turns => 200, :maps => "maps/*"
+  method_options :turns => 300, :maps => "maps/*", :limit => 30
   def fightall(opponent = Bot::DEFAULT_OPPONENT)
     agg = FightAggregator.new(options.merge({:opponent => opponent, :shell => self.shell}))
     begin
