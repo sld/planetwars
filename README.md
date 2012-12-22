@@ -1,6 +1,6 @@
 It is fork of https://github.com/wjbuys/planetwars-ruby.
 
-I did some fixes to work, because it not work in default configuration.
+I did some fixes to work, because its not work in default configuration.
 Tested on Ruby-1.9.3-p125.
 
 See git log.
